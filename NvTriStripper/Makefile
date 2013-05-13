@@ -38,10 +38,9 @@ endif
 
 ifeq ($(DEBUG), 1)
   CFLAGS += -g -DDEBUG -O0
-  LDFLAGS += -g -Wl,-L$(NVTRISTRIPDIR)/lib -Wl,-lNvTriStripd
+  LDFLAGS += -g
 else
   CFLAGS += -O2 -fdata-sections -ffunction-sections
-  LDFLAGS += -Wl,-L$(NVTRISTRIPDIR)/lib -Wl,-lNvTriStrip
 ifeq ($(PLATFORM),Darwin)
   LDFLAGS += -dead-strip
 else
@@ -52,13 +51,17 @@ endif
 ifeq ($(DEBUG), 1)
 OBJDIR=obj/debug
 BINDIR=bin/debug
+NVTRISTRIPLIBDIR=$(NVTRISTRIPDIR)/lib/debug
 else
 OBJDIR=obj/release
 BINDIR=bin/release
+NVTRISTRIPLIBDIR=$(NVTRISTRIPDIR)/lib/release
 endif
 
 dummy := $(shell test -d $(OBJDIR) || mkdir -p $(OBJDIR))
 dummy := $(shell test -d $(BINDIR) || mkdir -p $(BINDIR))
+
+LDFLAGS += -Wl,-L$(NVTRISTRIPLIBDIR) -Wl,-lNvTriStrip
 
 SOURCES=main.cpp
 OBJECTS=$(patsubst %.cpp, $(OBJDIR)/%.o, $(SOURCES))

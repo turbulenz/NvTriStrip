@@ -47,18 +47,19 @@ else
 endif
 endif
 
-LIBDIR=lib
 
 ifeq ($(DEBUG), 1)
 OBJDIR=obj/debug
-LIB=$(LIBDIR)/libNvTriStripd.a
+LIBDIR=lib/debug
 else
 OBJDIR=obj/release
-LIB=$(LIBDIR)/libNvTriStrip.a
+LIBDIR=lib/release
 endif
 
 dummy := $(shell test -d $(LIBDIR) || mkdir -p $(LIBDIR))
 dummy := $(shell test -d $(OBJDIR) || mkdir -p $(OBJDIR))
+
+LIB=$(LIBDIR)/libNvTriStrip.a
 
 SRCDIR=src
 SOURCES=$(SRCDIR)/NvTriStripObjects.cpp $(SRCDIR)/NvTriStrip.cpp

@@ -16,8 +16,8 @@
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
-			OutputDirectory=".\obj\Debug"
-			IntermediateDirectory=".\obj\Debug"
+			OutputDirectory=".\obj\debug"
+			IntermediateDirectory=".\obj\debug"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -46,10 +46,10 @@
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
-				PrecompiledHeaderFile=".\obj\Debug/NvTriStrip.pch"
-				AssemblerListingLocation=".\obj\Debug/"
-				ObjectFile=".\obj\Debug/"
-				ProgramDataBaseFileName=".\obj\Debug/"
+				PrecompiledHeaderFile=".\obj\debug/NvTriStrip.pch"
+				AssemblerListingLocation=".\obj\debug/"
+				ObjectFile=".\obj\debug/"
+				ProgramDataBaseFileName=".\obj\debug/"
 				BrowseInformation="1"
 				WarningLevel="3"
 				SuppressStartupBanner="true"
@@ -68,7 +68,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="lib\Debug\NvTriStrip.lib"
+				OutputFile="lib\debug\NvTriStrip.lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -80,7 +80,7 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile=".\obj\Debug/NvTriStrip.bsc"
+				OutputFile=".\obj\debug/NvTriStrip.bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
@@ -91,8 +91,8 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory=".\obj\Release"
-			IntermediateDirectory=".\obj\Release"
+			OutputDirectory=".\obj\release"
+			IntermediateDirectory=".\obj\release"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -127,10 +127,10 @@
 				EnableFunctionLevelLinking="true"
 				EnableEnhancedInstructionSet="2"
 				FloatingPointModel="2"
-				PrecompiledHeaderFile=".\obj\Release/NvTriStrip.pch"
-				AssemblerListingLocation=".\obj\Release/"
-				ObjectFile=".\obj\Release/"
-				ProgramDataBaseFileName=".\obj\Release/"
+				PrecompiledHeaderFile=".\obj\release/NvTriStrip.pch"
+				AssemblerListingLocation=".\obj\release/"
+				ObjectFile=".\obj\release/"
+				ProgramDataBaseFileName=".\obj\release/"
 				WarningLevel="3"
 				SuppressStartupBanner="true"
 			/>
@@ -147,7 +147,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="lib\Release\NvTriStrip.lib"
+				OutputFile="lib\release\NvTriStrip.lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -159,7 +159,7 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile=".\obj\Release/NvTriStrip.bsc"
+				OutputFile=".\obj\release/NvTriStrip.bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
