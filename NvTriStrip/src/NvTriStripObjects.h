@@ -195,7 +195,7 @@ protected:
 
 	WordVec indices;
 	int cacheSize;
-	int minStripLength;
+	unsigned int minStripLength;
 	float meshJump;
 	bool bFirstTimeResetPoint;
 
