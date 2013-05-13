@@ -3,6 +3,8 @@
 
 #define VERTEX_CACHE_H
 
+#include <string.h>
+
 class VertexCache
 {
 	
