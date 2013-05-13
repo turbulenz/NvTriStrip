@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NvTriStrip", "NvTriStrip\NvTriStrip.vcproj", "{AFF809E9-F6F7-4421-97F5-4D7114613BF3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NvTriStripper", "NvTriStripper\NvTriStripper.vcproj", "{CD0E6CDB-175D-4FAF-80D7-A673C7777108}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AFF809E9-F6F7-4421-97F5-4D7114613BF3} = {AFF809E9-F6F7-4421-97F5-4D7114613BF3}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFF809E9-F6F7-4421-97F5-4D7114613BF3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AFF809E9-F6F7-4421-97F5-4D7114613BF3}.Debug|Win32.Build.0 = Debug|Win32
+		{AFF809E9-F6F7-4421-97F5-4D7114613BF3}.Release|Win32.ActiveCfg = Release|Win32
+		{AFF809E9-F6F7-4421-97F5-4D7114613BF3}.Release|Win32.Build.0 = Release|Win32
+		{CD0E6CDB-175D-4FAF-80D7-A673C7777108}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CD0E6CDB-175D-4FAF-80D7-A673C7777108}.Debug|Win32.Build.0 = Debug|Win32
+		{CD0E6CDB-175D-4FAF-80D7-A673C7777108}.Release|Win32.ActiveCfg = Release|Win32
+		{CD0E6CDB-175D-4FAF-80D7-A673C7777108}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
