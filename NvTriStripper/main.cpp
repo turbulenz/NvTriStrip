@@ -9,6 +9,9 @@
 
 using namespace std;
 
+const static int versionMajor = 1;
+const static int versionMinor = 0;
+
 int main (int argc, char * const argv[])
 {
     bool stitchstrips = false;
@@ -37,6 +40,11 @@ int main (int argc, char * const argv[])
             //cerr << "Stitching on" << endl;
             argidx++;
             stitchstrips = true;
+        }
+        else if (strcmp(argv[argidx], "-version") == 0)
+        {
+            cout << versionMajor << "." << versionMinor << endl;
+            exit(0);
         }
     }
 
@@ -73,7 +81,7 @@ int main (int argc, char * const argv[])
         indices.push_back(idx);
     }
 
-    //Get the NvTriStrip code to do it's evil work
+    //Call NvTriStrip to generate the strips
     PrimitiveGroup *prims;
     unsigned short numprims;
     bool done = GenerateStrips(&indices[0], indices.size(), &prims, &numprims);
