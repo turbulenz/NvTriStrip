@@ -5,7 +5,10 @@ obj
 *.idb
 *.ncb
 *.suo
-*.vcproj.*.user
+*.sdf
+*.user
+*.filters
+*.opensdf
 BuildLog.htm
 NvTriStripper/Release
 NvTriStripper/Debug
