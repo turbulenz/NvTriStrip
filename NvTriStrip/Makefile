@@ -14,7 +14,6 @@ echo Unsupported architecture $(M_ARCH)
 endif
 endif
 LDFLAGS=$(LIBPATHS)
-LDFLAGS+= -Wl
 else
 ifeq ($(PLATFORM),Darwin)
 LIBTYPE=macosx
