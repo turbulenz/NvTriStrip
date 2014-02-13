@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include <set>
+#include <algorithm>
 #include "NvTriStripObjects.h"
 #include "VertexCache.h"
 
